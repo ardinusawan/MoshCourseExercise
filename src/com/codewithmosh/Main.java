@@ -10,8 +10,7 @@ public class Main {
         stack.push(2);
         stack.push(3);
 
-        var top = stack.pop();
-        // peek
+        var top = stack.peek();
         // isEmpty
         // int[]
     }
