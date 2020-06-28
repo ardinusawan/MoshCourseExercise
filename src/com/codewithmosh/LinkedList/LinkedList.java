@@ -12,6 +12,11 @@ public class LinkedList {
 
     private Node first;
     private Node last;
+    private int size;
+
+    public LinkedList(){
+        this.size = 0;
+    }
 
     public void addFirst(int item){
         var node = new Node(item);
@@ -22,6 +27,7 @@ public class LinkedList {
             node.next = first;
             first = node;
         }
+        size++;
     }
 
     public void addLast(int item) {
@@ -34,14 +40,29 @@ public class LinkedList {
             last.next = node;
             last = node;
         }
+        size++;
     }
 
     private boolean isEmpty() {
         return first == null;
     }
 
+    public int indexOf(int searchValue){
+        for(int i = 0; i < size; i++){
+            var current = first;
+            int index = 0;
+            while (current != null){
+               if (current.value == searchValue) return index;
+               else {
+                   current = current.next;
+                   index++;
+               }
+            }
+        }
+        return -1;
+    }
+
     //deleteFirst
     //deleteLast
     //contains
-    //indexOf
 }
