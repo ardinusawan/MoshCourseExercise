@@ -11,7 +11,8 @@ public class Main {
         linkedList.indexOf(30);
         boolean contains = linkedList.contains(7);
         linkedList.removeFirst();
+        linkedList.removeLast();
 
-        System.out.println(contains);
+        System.out.println();
     }
 }
