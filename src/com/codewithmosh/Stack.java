@@ -7,10 +7,14 @@ public class Stack {
     private int size = 0;
 
     public void push(int value){
-       data[size++] = value;
+        if (size == data.length) throw new StackOverflowError();
+
+        data[size++] = value;
     }
 
     public int pop() {
+        if (size == 0) throw new IllegalStateException();
+
         var top = data[size-1];
         data[size-1] = 0;
         size--;
