@@ -13,7 +13,6 @@ public class LinkedList {
     private Node first;
     private Node last;
 
-    //addFirst
     public void addFirst(int item){
         var node = new Node(item);
         if (isEmpty()){
@@ -25,11 +24,10 @@ public class LinkedList {
         }
     }
 
-    //addLast
     public void addLast(int item) {
         var node = new Node(item);
 
-        if (first == null){
+        if (isEmpty()){
             first = last = node;
         }
         else {
