@@ -27,4 +27,8 @@ public class Queue {
         size--; rear--;
         return first;
     }
+
+    public int peek(){
+        return data[front];
+    }
 }

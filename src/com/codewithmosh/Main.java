@@ -17,5 +17,7 @@ public class Main {
         queue.enqueue(1);
         queue.enqueue(2);
 
+        var front = queue.peek();
+
     }
 }
