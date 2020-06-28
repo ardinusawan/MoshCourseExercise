@@ -104,6 +104,15 @@ public class LinkedList {
         return size;
     }
 
+    public int[] toArray() {
+        var current = first;
+        var result = new int[size];
+        for (int i = 0; i < size; i++){
+            result[i] = current.value;
+            current = current.next;
+        }
+        return result;
+    }
     //deleteFirst
     //deleteLast
 }

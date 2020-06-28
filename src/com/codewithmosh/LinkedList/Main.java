@@ -1,5 +1,7 @@
 package com.codewithmosh.LinkedList;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args){
         var linkedList = new LinkedList();
@@ -13,7 +15,8 @@ public class Main {
         linkedList.removeFirst();
         linkedList.removeLast();
         var size = linkedList.size();
-
-        System.out.println(size);
+        var array = linkedList.toArray();
+        
+        System.out.println(Arrays.toString(array));
     }
 }
