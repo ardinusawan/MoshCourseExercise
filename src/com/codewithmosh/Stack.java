@@ -19,4 +19,7 @@ public class Stack {
        return data[size-1];
     }
 
+    public boolean isEmpty() {
+        return size == 0;
+    }
 }
