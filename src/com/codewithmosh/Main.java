@@ -14,5 +14,7 @@ public class Main {
 
         var empty = stack.isEmpty();
         // int[]
+
+        System.out.println(stack.toString());
     }
 }

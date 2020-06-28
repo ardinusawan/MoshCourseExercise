@@ -1,5 +1,7 @@
 package com.codewithmosh;
 
+import java.util.Arrays;
+
 public class Stack {
     private int[]data = new int[5];
     private int size = 0;
@@ -22,4 +24,11 @@ public class Stack {
     public boolean isEmpty() {
         return size == 0;
     }
+
+    @Override
+    public String toString(){
+        var content = Arrays.copyOfRange(data, 0, size);
+        return Arrays.toString(content);
+    }
+
 }
