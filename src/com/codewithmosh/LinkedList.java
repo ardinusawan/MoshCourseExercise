@@ -1,4 +1,4 @@
-package com.codewithmosh.LinkedList;
+package com.codewithmosh;
 
 import java.util.NoSuchElementException;
 
