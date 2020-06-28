@@ -113,6 +113,20 @@ public class LinkedList {
         }
         return result;
     }
-    //deleteFirst
-    //deleteLast
+
+    public void reverse() {
+        if (isEmpty()) return;
+
+        var before = first;
+        var current = first.next;
+        while (current != null){
+            var after = current.next;
+            current.next = before;
+            before = current;
+            current = after;
+        }
+        first = last;
+        last = current;
+    }
+
 }
