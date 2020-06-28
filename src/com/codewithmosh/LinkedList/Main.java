@@ -8,7 +8,8 @@ public class Main {
         linkedList.addLast(30);
         linkedList.addFirst(9);
         linkedList.addFirst(8);
-        int value = linkedList.indexOf(30);
-        System.out.println(value);
+        linkedList.indexOf(30);
+        boolean contains = linkedList.contains(7);
+        System.out.println(contains);
     }
 }

@@ -62,7 +62,10 @@ public class LinkedList {
         return -1;
     }
 
+    public boolean contains(int value){
+        return indexOf(value) != -1;
+    }
+
     //deleteFirst
     //deleteLast
-    //contains
 }
