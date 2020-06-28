@@ -6,5 +6,7 @@ public class Main {
         linkedList.addLast(10);
         linkedList.addLast(20);
         linkedList.addLast(30);
+        linkedList.addFirst(9);
+        linkedList.addFirst(8);
     }
 }
