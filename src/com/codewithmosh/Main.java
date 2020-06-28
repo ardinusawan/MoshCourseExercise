@@ -4,17 +4,13 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args){
-        // Stack
-        var stack = new Stack();
-        stack.push(1);
-        stack.push(2);
-        stack.push(3);
+        var queue = new Queue();
 
-        var top = stack.peek();
-
-        var empty = stack.isEmpty();
-        // int[]
-
-        System.out.println(stack.toString());
+        queue.enqueue(1);
+        queue.enqueue(2);
+        queue.enqueue(3);
+        queue.enqueue(4);
+        queue.enqueue(5);
+        queue.enqueue(6);
     }
 }
