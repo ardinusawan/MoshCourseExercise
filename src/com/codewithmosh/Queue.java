@@ -31,4 +31,8 @@ public class Queue {
     public int peek(){
         return data[front];
     }
+
+    public boolean isEmpty(){
+        return size == 0;
+    }
 }

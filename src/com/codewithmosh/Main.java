@@ -18,6 +18,6 @@ public class Main {
         queue.enqueue(2);
 
         var front = queue.peek();
-
+        var empty = queue.isEmpty();
     }
 }
