@@ -100,6 +100,10 @@ public class LinkedList {
         return current;
     }
 
+    public int size(){
+        return size;
+    }
+
     //deleteFirst
     //deleteLast
 }

@@ -12,7 +12,8 @@ public class Main {
         boolean contains = linkedList.contains(7);
         linkedList.removeFirst();
         linkedList.removeLast();
+        var size = linkedList.size();
 
-        System.out.println();
+        System.out.println(size);
     }
 }
