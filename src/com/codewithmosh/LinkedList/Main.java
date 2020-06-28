@@ -10,6 +10,8 @@ public class Main {
         linkedList.addFirst(8);
         linkedList.indexOf(30);
         boolean contains = linkedList.contains(7);
+        linkedList.removeFirst();
+
         System.out.println(contains);
     }
 }

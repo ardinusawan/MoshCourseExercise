@@ -1,5 +1,7 @@
 package com.codewithmosh.LinkedList;
 
+import java.util.NoSuchElementException;
+
 public class LinkedList {
     private class Node {
         private int value;
@@ -64,6 +66,14 @@ public class LinkedList {
 
     public boolean contains(int value){
         return indexOf(value) != -1;
+    }
+
+    public void removeFirst() {
+        if (isEmpty()) throw new NoSuchElementException();
+
+        var second = first.next;
+        first.next = null;
+        first = second;
     }
 
     //deleteFirst
