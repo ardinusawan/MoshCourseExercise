@@ -19,5 +19,6 @@ public class Main {
 
         var front = queue.peek();
         var empty = queue.isEmpty();
+        var full = queue.isFull();
     }
 }
