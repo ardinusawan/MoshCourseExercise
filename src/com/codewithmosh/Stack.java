@@ -14,4 +14,9 @@ public class Stack {
         size--;
         return top;
     }
+
+    public int peek() {
+       return data[size-1];
+    }
+
 }

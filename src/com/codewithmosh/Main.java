@@ -11,7 +11,8 @@ public class Main {
         stack.push(3);
 
         var top = stack.peek();
-        // isEmpty
+
+        var empty = stack.isEmpty();
         // int[]
     }
 }
