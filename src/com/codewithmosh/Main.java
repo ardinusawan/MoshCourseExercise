@@ -7,11 +7,10 @@ public class Main {
         // Stack
         var stack = new Stack();
         stack.push(1);
-        stack.push(1);
-        stack.push(1);
+        stack.push(2);
+        stack.push(3);
 
-        // push
-        // pop
+        var top = stack.pop();
         // peek
         // isEmpty
         // int[]

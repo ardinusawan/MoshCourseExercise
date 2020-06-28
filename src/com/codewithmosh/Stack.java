@@ -5,7 +5,13 @@ public class Stack {
     private int size = 0;
 
     public void push(int value){
-       data[size] = value;
-       size++;
+       data[size++] = value;
+    }
+
+    public int pop() {
+        var top = data[size-1];
+        data[size-1] = 0;
+        size--;
+        return top;
     }
 }
